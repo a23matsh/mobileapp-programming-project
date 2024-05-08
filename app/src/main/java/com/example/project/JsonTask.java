@@ -1,4 +1,4 @@
-////////package com.example.networking;
+package com.example.project;
 
 import android.os.AsyncTask;
 
@@ -10,7 +10,7 @@ import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
 
-public class JsonTask extends AsyncTask<String, String, String> {
+public class JsonTask  extends AsyncTask<String, String, String> {
 
     public interface JsonTaskListener {
         void onPostExecute(String json);
@@ -64,3 +64,5 @@ public class JsonTask extends AsyncTask<String, String, String> {
         listener.onPostExecute(json);
     }
 }
+
+

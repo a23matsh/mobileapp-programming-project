@@ -1,3 +1,4 @@
+package com.example.project;
 
 @SuppressWarnings("WeakerAccess")
 public class RecyclerViewItem {
