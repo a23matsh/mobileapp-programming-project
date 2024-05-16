@@ -1,5 +1,7 @@
 package com.example.project;
 
+import android.os.Build;
+
 import com.google.gson.annotations.SerializedName;
 
 public class Buildings {
@@ -15,6 +17,20 @@ public class Buildings {
     private String country;
     @SerializedName("location")
     private String city;
+
+    //Constructor
+
+    public Buildings(String ID, String name, int buildYear, int height, int floors, String city, String country) {
+        this.ID = ID;
+        this.name = name;
+        this.buildYear = buildYear;
+        this.height = height;
+        this.floors = floors;
+        this.city = city;
+        this.country = country;
+
+
+    }
 
     // Getters and setters for ID
     public String getID() {
