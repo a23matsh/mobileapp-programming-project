@@ -6,9 +6,37 @@
     android:padding="10dp">
 
     <TextView
-        android:id="@+id/title"
+        android:id="@+id/countryTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:text="Country"
         android:textSize="18sp"/>
 
+    <TextView
+        android:id="@+id/cityTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="City"
+        android:textSize="18sp"/>
+
+    <TextView
+        android:id="@+id/floorsTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Floors"
+        android:textSize="18sp"/>
+
+    <TextView
+        android:id="@+id/buildYearTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Country"
+        android:textSize="18sp"/>
+
+    <TextView
+        android:id="@+id/heightTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Height"
+        android:textSize="18sp"/>
 </LinearLayout>
