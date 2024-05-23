@@ -51,7 +51,7 @@ public class Buildings {
     }
 
     //getters and setters for City
-    public String getCity(String city) {
+    public String getCity() {
         return city;
     }
 
@@ -60,17 +60,27 @@ public class Buildings {
     }
 
     //Getters and cetters for country
-    public String getCountry(String country) {
+    public String getCountry() {
         return country;
+    }
+
+    public int getBuildYear() {
+        return buildYear;
+    }
+
+    public int getHeight() {
+        return height;
     }
 
     public void setCountry(String Country) {
         this.country = country;
 
+
+
     }
     //Getters and cetters for floors
-    public String getFloors(String country) {
-        return country;
+    public int getFloors() {
+        return floors;
     }
 
     public void setFloors(int floors) {

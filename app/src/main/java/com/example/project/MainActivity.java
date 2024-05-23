@@ -2,6 +2,7 @@ package com.example.project;
 
 import android.os.Bundle;
 import android.util.Log;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
@@ -13,7 +14,6 @@ import com.google.gson.reflect.TypeToken;
 
 import java.lang.reflect.Type;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 
@@ -33,9 +33,17 @@ public class MainActivity extends AppCompatActivity implements JsonTask.JsonTask
         setSupportActionBar(toolbar);
 
         buildingsList = new ArrayList<>();
+
+        adapter = new RecyclerViewAdapter(this, buildingsList, new RecyclerViewAdapter.OnClickListener() {
+
+
+            @Override
+            public void onClick(Buildings building) {
+                Toast.makeText(MainActivity.this, "Clicked on: " + building.getCity(), Toast.LENGTH_SHORT).show();
+            }
+        });
         RecyclerView recyclerView = findViewById(R.id.recycler_view);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
-        adapter = new RecyclerViewAdapter(this, buildingsList);
         recyclerView.setAdapter(adapter);
 
         new JsonTask(this).execute(JSON_URL);
@@ -50,9 +58,11 @@ public class MainActivity extends AppCompatActivity implements JsonTask.JsonTask
 
         Type type = new TypeToken<List<Buildings>>() {
         }.getType();
-        List<Buildings> Buildings = gson.fromJson(json, type);
+        List<Buildings> buildings = gson.fromJson(json, type);
 
-        adapter.notifyDataSetChanged();
+        adapter.updateBuildings(buildings);
+
+
 
     }
 
