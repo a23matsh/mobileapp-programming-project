@@ -38,11 +38,11 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
     @Override
     public void onBindViewHolder(ViewHolder holder, int position) {
         Buildings building = buildingsList.get(position);
-        holder.countryTextView.setText("Country: " + building.getCountry() + ".");
-        holder.cityTextView.setText("City: " + building.getCity() + ".");
-        holder.floorsTextView.setText("Floors: " + building.getFloors() + ".");
-        holder.buildYearTextView.setText("Build Year: " + building.getBuildYear() + ".");
-        holder.heightTextView.setText("Height: " + building.getHeight() + ".");
+        holder.countryTextView.setText("<b>Country:<b/> " + building.getCountry() + ".");
+        holder.cityTextView.setText("<b>City:<b/> " + building.getCity() + ".");
+        holder.floorsTextView.setText("<b>Floors:<b/> " + building.getFloors() + ".");
+        holder.buildYearTextView.setText("<b>Build Year:<b/> " + building.getBuildYear() + ".");
+        holder.heightTextView.setText("<b>Height:<b/> " + building.getHeight() + ".");
         
 
     }
