@@ -7,6 +7,15 @@
     android:layout_height="match_parent"
     tools:context=".About">
 
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        tools:ignore="MissingConstraints"
+        app:title="About">
+
+
+    </com.google.android.material.appbar.AppBarLayout>
     <WebView
         android:id="@+id/aboutWebView"
         android:layout_width="match_parent"
