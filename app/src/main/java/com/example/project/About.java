@@ -13,5 +13,7 @@ public class About extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_about);
 
+        WebView webView = findViewById(R.id.webview);
+        webView.loadUrl("file:///android_asset/about.html");
     }
 }
