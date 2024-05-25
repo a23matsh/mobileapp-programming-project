@@ -5,12 +5,15 @@
     android:layout_height="wrap_content"
     android:padding="10dp">
 
+
+
     <TextView
         android:id="@+id/idTextView"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="ID"
-        android:textSize="15sp"
+        android:textSize="23sp"
+        android:textStyle="bold"
         android:layout_marginBottom="8dp"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -21,7 +24,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="Country"
-        android:textSize="15sp"
+        android:textSize="17sp"
         android:layout_marginBottom="8dp"
         app:layout_constraintTop_toBottomOf="@+id/idTextView"
         app:layout_constraintStart_toStartOf="parent"
@@ -32,7 +35,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="City"
-        android:textSize="15sp"
+        android:textSize="17sp"
         android:layout_marginBottom="8dp"
         app:layout_constraintTop_toBottomOf="@+id/countryTextView"
         app:layout_constraintStart_toStartOf="parent"
@@ -43,7 +46,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="Floors"
-        android:textSize="15sp"
+        android:textSize="17sp"
         android:layout_marginBottom="8dp"
         app:layout_constraintTop_toBottomOf="@+id/cityTextView"
         app:layout_constraintStart_toStartOf="parent"
@@ -54,7 +57,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="Build Year"
-        android:textSize="15sp"
+        android:textSize="17sp"
         android:layout_marginBottom="8dp"
         app:layout_constraintTop_toBottomOf="@+id/floorsTextView"
         app:layout_constraintStart_toStartOf="parent"
@@ -65,7 +68,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="Height"
-        android:textSize="16sp"
+        android:textSize="17sp"
         app:layout_constraintTop_toBottomOf="@+id/buildYearTextView"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"/>
